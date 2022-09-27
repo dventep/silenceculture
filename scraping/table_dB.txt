@@ -1,0 +1,17 @@
+Sonidos característicos|Nivel de presión sonora [dB]|Efecto|RGB
+ |0|Umbral auditivo|127,255,0
+ |10|Apenas audible |127,255,0
+Estudio de radiodifusión|20| |127,255,0
+Biblioteca|30|Muy silencioso|127,255,0
+Líving|40| |127,255,0
+Tránsito de vehículos livianos |50|Silencio|127,255,0
+Aire acondicionado|60|Intrusivo|0,100,0
+Restaurante ruidoso|70|Dificil uso del telefono|218,165,32
+Reloj Despertador (0,5 m)|80|Molesto|255,105,180
+Camión pesado (15 m)|90|   Daño auditivo (8 Hrs)|255,69,0
+Cami&oacuten recolector|100|Muy fuerte|255,0,0
+Martillo neumático|110|Extremadamente fuerte|255,0,0
+Despegue de jets (60 m)|120|Maximo esfuerzo vocal|255,0,0
+Trueno|130| |255,0,0
+Operación en pista de jets|140|Dolorosamente fuerte|178,34,34
+Zona de lanzamiento de cohetes|180|Pérdida auditiva irreversible|178,34,34
