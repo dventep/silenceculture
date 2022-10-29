@@ -12,30 +12,14 @@ sensor_microphone = machine.ADC(machine.Pin(39))
 sensor_microphone.atten(machine.ADC.ATTN_11DB)
 #sensor_microphone.width(machine.ADC.WIDTH_11BIT)     # Lectura con precisión de 11 bits # Funciona 1° Parte
 sensor_microphone.width(machine.ADC.WIDTH_11BIT)
-
-start_in = 0
-rgb_send = '0,0,0'
-manage_rgb.rgb(rgb_send)
-while start_in < 7:
-    rgb_send = '0,0,100'
-    manage_rgb.rgb(rgb_send)
-    start_in += 1
-    utime.sleep(1)
-    
-    rgb_send = '255,255,255'
-    manage_rgb.rgb(rgb_send)
-    start_in += 1
-    utime.sleep(1)
-    
-
 while True:
+    rgb_send = "127,255,0"
+    #led.on()
     db_value = manage_dB.calculate_dB(sensor_microphone, False)
     for index, line_db in enumerate(table_db):        
         if index > 0 and db_value < int(table_db[index]["dB"]):
             rgb_send = table_db[index-1]["rgb"]
             break
     manage_rgb.rgb(rgb_send)
-    led.off()
-    utime.sleep(0.1)
-    led.on()
-manage_rgb.rgb('0,0,100')
+    #$print(dir(sensor_microphone))
+    utime.sleep(1)
