@@ -20,3 +20,4 @@ def get_date():
     elif take_typical_date(utime.localtime()) <= take_typical_date(rtc.get_time()):
         current_date = rtc.get_time()
     return current_date    
+
